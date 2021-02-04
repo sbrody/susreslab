@@ -1,0 +1,67 @@
+.page-template-contact, .page-template-utility, .page-template-confirmation {
+    background-color: $lightgrey;
+    //email confirmation page
+    
+    #contact-form-outer {
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (min-width: 767px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .half-width {
+            margin-top: 0;
+            &:first-of-type {
+                @media screen and (min-width: 767px) {
+                    padding-right: 48px;
+                } 
+            }
+        }
+        .form-container {
+            background: none;
+            padding: 0;
+            .form {
+                width: 100%;
+                margin: 0;
+                form {
+                    margin-top: 0;
+                    
+                }
+                input, textarea {
+                    &:not(.button) {
+                        background: none;
+                        border: 2px solid #fff;
+                        width: 100%;
+                        margin-right: 0;
+                        &::placeholder {
+                            color: $grey;
+                        }
+                        &:focus {
+                            border-color: $turquoise;
+                        }
+                    }
+                    
+                &.button {
+                    margin-top: 32px;
+                }    
+                }
+                textarea {
+                    height: 270px;
+                }
+                .form-disclaimer {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+}
+
+.page-template-confirmation {
+    .entry-content {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

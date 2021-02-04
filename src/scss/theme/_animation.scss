@@ -1,0 +1,179 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes buzz {
+    from {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(5px, 3px);
+    }
+
+    50% {
+        transform: translate(2px, 8px);
+    }
+
+    75% {
+        transform: translate(-2px, -2px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes sunray {
+    
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fish {
+    from {
+        transform: translate(0, 0);
+    }
+    
+    50% {
+        transform: translate(3px, 2px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fisherman-arm {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(3px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fisherman {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(1px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fisherman-head {
+    from {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(13deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+.turbine {
+    path {
+        animation: rotate 5s linear infinite;
+        transform-origin: -.39% .355%;
+    }
+    #path408 {
+        transform-origin: -.25% .425%;
+    }
+    
+}
+
+#g50 {
+    path {
+        animation: rotate 6.5s linear infinite;
+        transform-origin: -0.615% 0.2%;
+    }
+}
+
+.bee {
+    path {
+        animation: 1.5s linear infinite buzz;
+    }
+    #path802, #path810 {
+        animation: 1.8s linear infinite buzz alternate;
+    }
+}
+
+// .line {
+//     path {
+//         // stroke-dasharray: 50 !important;
+//         animation: 2s ease infinite sunray;
+               
+//     }
+//     &#g976{
+//         path {
+//             animation-delay: 1s;
+//         }
+//     }
+//     &#g980 {
+//         path {
+//             animation-delay: 1s;
+//         }
+//     }
+// }
+
+#g664 {
+    path {
+        animation: 3s ease-in infinite fish;
+    }
+}
+
+
+#path654 {
+    animation: 3s ease-in infinite fish;
+}
+
+#g660, #g656 {
+    path {
+        animation: 3s ease-in infinite fisherman-arm;
+    }
+}
+
+#g640 {
+    path {
+        animation: 3s ease-in infinite fisherman;
+    }
+}
+
+#g648 {
+    path {
+        animation: 3s ease-in infinite fisherman-head;
+    }
+}
+
+

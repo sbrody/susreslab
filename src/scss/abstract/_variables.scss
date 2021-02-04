@@ -1,0 +1,78 @@
+// Fonts
+@mixin xl-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: normal;
+}
+
+@mixin heading1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: normal;
+}
+
+@mixin heading2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: normal;
+}
+
+@mixin heading3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+@mixin heading4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+@mixin intro-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+@mixin intro-text-mob {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+@mixin body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+@mixin body-mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+@mixin small-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+// colours
+$orange: #FD583E;
+$turquoise: #27DAD0;
+$turq-dark: #2BCBC2;
+$charcoal: #546169;
+$grey: rgba(84, 97, 105, 0.7);
+$lightgrey: #EEF1F3;

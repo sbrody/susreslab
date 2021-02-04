@@ -1,0 +1,48 @@
+.button {
+    background-color: $orange;
+    height: 56px;
+    color: #fff;
+    @include small-text; 
+    border-radius: 28px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    a {
+        color: #fff;
+    }
+    @media screen and (max-width: 350px) {
+        height: auto;
+    }
+    &:hover {
+        background-color: #F43515;
+        a {
+            color: #fff;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &:active {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        
+    }
+    &.small {
+        width: 230px;
+    }
+    &.medium {
+        width: 350px;
+    }
+    &.large {
+        width: 100%;
+    }
+}
+
+.wide-button-container {
+    width: 100%;
+    margin: 32px 0;
+    max-width: 740px;
+    @media screen and (min-width: 767px) {
+        margin: 48px 0;
+    }
+}

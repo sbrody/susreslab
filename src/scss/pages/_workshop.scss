@@ -1,0 +1,408 @@
+// Workshop form
+
+.page-template-workshop {
+    .pum-overlay {
+        background-color: rgba(84, 97, 105, 0.6);
+        .pum-container {
+            padding: 48px 96px;
+            background-color: $lightgrey;
+            @media all and (max-width: 675px) {
+                padding: 1rem;
+            }
+            .pum-content {
+                color: $charcoal;
+            
+                .workshop-popup-intro {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+                    h2 {
+                        width: 65%;
+                        text-align: left;
+                    }
+                    p {
+                        width: 30%;
+                        margin-bottom: 0;
+                    }
+                }
+                input, textarea {
+                    border-color: #fff;
+                    background-color: transparent;
+                    border-radius: 4px;
+                    &::placeholder {
+                        color: $charcoal;
+                    }
+                    &:focus {
+                        border-color: $turquoise;
+                    }
+                    
+                }
+                @media all and (max-width: 675px) {
+                    .wpforms-field, .wpforms-field-row-block {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                    .wpforms-field-row-block {
+                        margin-top: 20px;
+                    }
+                }
+                button {
+                    max-width: 318px;
+                    background-color: $orange;
+                    color: #fff;
+                    border-radius: 28px;
+                    border: none;
+                    &:hover, &:focus {
+                        background-color: #F43515;
+                    }
+                }
+            
+            }
+            .pum-close {
+                background-color: transparent;
+                box-shadow: none;
+            
+                &:after {
+                    content: '';
+                    background-image: url('/wp-content/themes/genesis-sample/images/close-grey.png');
+                    position: absolute;
+                    top: 12px;
+                    left: -5px;
+                    width: 15px;
+                    height: 15px;
+                    background-size: contain;
+                }
+            }
+        }
+        
+    }    
+
+    .wpforms-container .wpforms-confirmation-container-full {
+        background-color: $turquoise;
+        border-color: $turq-dark;
+    }
+
+    // page structure
+
+    article {
+        margin-bottom: 0;
+    }
+    .pic-caption {
+        margin-right: 1rem;
+        margin-left: auto;
+        font-size: 14px;
+    }
+
+    .entry-content {
+        max-width: 850px;
+        margin: 0 auto;
+        position: relative;
+        padding: 32px;
+        ol {
+            margin-top: 32px;
+            margin-bottom: 48px;
+            li {
+                padding-bottom: 32px;
+                padding-top: 0;
+                &:before {
+                    top: -32px;
+                }
+            }
+        }
+        ul {
+            margin-top: 32px;
+            margin-bottom: 64px;
+        }
+    }
+
+    h2, h3, h4 {
+        text-align: left;
+    }
+
+    h2 {
+        margin-top: 64px;
+    }
+
+    .resource-list {
+        padding-top: 0;
+    }
+    
+    
+}
+
+// workshop cta
+
+.workshop-cta {
+    background-color: #fff;
+    padding: 24px;
+    display: flex;
+    position: relative;
+    top: -150px;
+    margin-bottom: -126px;
+    @media screen and (min-width: 651px) {
+        padding: 32px;
+    }
+    .flex-column-1 {
+        width: 30%;
+        @media screen and (max-width: 650px) {
+            display: none;
+        }
+    }
+    .flex-column-2 {
+        @media screen and (min-width: 651px) {
+            width: 65%;
+            margin-left: 5%;
+        }
+        p {
+            font-size: 14px;
+            color: $orange;
+            margin: 0;
+        }
+        h2 {
+            @include intro-text-mob;
+            text-align: left;
+            margin-top: 16px;
+        }
+        .workshop-cta-footer {
+            display: flex;
+            align-items: center;
+            .button {
+                height: 32px;
+                line-height: 1;
+                padding: 5px 20px;
+                min-width: 118px;
+                margin-right: 10px;
+                @media screen and (min-width: 651px) {
+                    min-width: 125px;
+                }
+            }
+            .workshop-date {
+                font-size: 14px;
+                margin-right: 0;
+                margin-left: auto;
+                display: block;
+                width: 50%;
+                padding-left:10px;
+            }
+        }
+    }
+}
+
+.workshop-logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 811px) {
+        margin-top: 8px;
+    }
+    img {
+        max-width: 136px;
+        width: auto;
+        margin-right: 24px;
+        
+    }
+    span {
+        padding-left: 24px;
+        border-left: 1px solid #fff;
+        font-size: 16px;
+        @media screen and (max-width: 810px) {
+            border-left: none;
+            padding-left: 0;
+            padding-top: 12px;
+            width: 100%;
+        }
+    }
+    hr {
+        width: 100%;
+        border-top: 1px solid #fff;
+        margin-top: 24px;
+    }
+}
+
+// workshop biogs
+.absolute-container {
+    position: relative;
+    @media screen and (min-width:1024px) {
+        left: calc(0px - (100vw - 786px) / 2);
+        
+    }
+    left: calc(0px - (50vw - 50%));
+    width: 100vw;
+    background-color: #fff;
+    padding: 0 32px 64px;
+    .workshop-biogs {
+        padding: 0 16px;
+        width: 1440px;
+        max-width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+        .biog-card {
+            width: 30%;
+            min-width: 300px;
+            flex-basis: 30% !important;
+            margin: 1rem 1% !important;
+            border-bottom: none !important;
+            font-size: 16px;
+            background-color: $lightgrey;
+            padding: 16px;
+            height: 450px;
+            justify-content: flex-start;
+            text-align: center;
+            img {
+                width: 120px;
+                &.biog-icon {
+                    position: absolute;
+                    width: 50px;
+                    height: auto;
+                    top: 88px;
+                    left: 55%;
+                    filter: none;
+                }
+            }
+            .biog-title {
+                color: $orange;
+                font-size: 14px;
+                line-height: 1.2;
+                margin-bottom: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// workshop cta card
+
+.workshop-card {
+    padding: 0 32px 48px;
+    @media screen and (min-width:1024px) {
+        left: calc(0px - (920px - 786px) / 2);
+        width: 920px; 
+    }
+    max-width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 64px;
+    h2 {
+        text-align: left;
+    }
+    button {
+        margin-top: 16px;
+        @media screen and (max-width: 450px) {
+            height: auto;
+        }
+    }
+}
+
+// testimonials
+
+.testimonials-outer {
+    background: linear-gradient(to bottom, #fff 0%, #fff 75%, $lightgrey 75%, $lightgrey 100%);
+    padding-bottom: 0;
+}
+
+.testimonials-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: flex-start;
+    max-width: 1110px;
+    margin: 0 auto;
+    .testimonials-upper {
+        max-width: 960px;
+        margin: 0 auto 32px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        
+        p {
+            font-size: 16px;
+            &:first-of-type {
+                font-size: 20px;
+            }
+        }
+        .flex-section {
+            width: 100%;
+            padding-left: 56px;
+            @media screen and (min-width: 650px) {
+                width: 60%;
+            }
+            h2 {
+                @media screen and (max-width: 650px) {
+                    margin-top: 32px;
+                }
+            }
+        }
+        img {
+            padding: 32px;
+            @media screen and (min-width: 650px) {
+                width: 40%;
+            }
+            
+        }
+        h2 {
+            position: relative;
+            &:before {
+                content: '';
+                background-image: url(/wp-content/themes/genesis-sample/images/icons/quote-start.svg);
+                width: 32px;
+                height: 32px;
+                background-size: contain;
+                position: absolute;
+                left: - 56px;
+                top: 10px;
+
+            }
+        }
+    }
+    .testimonials-pullquote-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border: 1px solid $lightgrey;
+        padding: 48px;
+        flex-wrap: wrap;
+        background-color: #fff;
+        img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        figure {
+            width: 100%;
+
+            @media screen and (min-width: 650px) {
+                width: calc(100% - 220px);
+                margin-left: 48px;
+            }
+            
+            blockquote {
+                @include heading4;
+                font-size: 24px;
+                margin: 32px 0 0;
+                @media screen and (min-width:650px) {
+                    margin: 0;
+                    @include heading4;
+                }
+               
+            }
+            figcaption {
+                font-size: 16px;
+                margin-top: 32px;
+            }
+        }
+        .testimonials-footer {
+            margin-top: 32px;
+            width: 100%;
+            background-color: $lightgrey;
+            padding: 16px;
+            text-align: center;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

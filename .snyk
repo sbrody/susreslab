@@ -1,0 +1,470 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-MIXINDEEP-450212:
+    - browser-sync > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.670Z'
+    - browser-sync > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.670Z'
+    - browser-sync > chokidar > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.670Z'
+    - browser-sync > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.670Z'
+    - browser-sync > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.670Z'
+    - gulp > glob-watcher > chokidar > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.670Z'
+    - browser-sync > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.670Z'
+    - browser-sync > chokidar > anymatch > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > readdirp > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > anymatch > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > readdirp > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > anymatch > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > readdirp > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - browser-sync > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > mixin-deep:
+        reason: None given
+        expires: '2019-07-24T11:46:14.671Z'
+  SNYK-JS-SETVALUE-450213:
+    - browser-sync > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > anymatch > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > readdirp > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - browser-sync > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.672Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > anymatch > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > readdirp > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - browser-sync > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.673Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - browser-sync > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - browser-sync > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.674Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.676Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2019-07-24T11:46:14.676Z'
+  'npm:clean-css:20180306':
+    - gulp-cssmin > clean-css:
+        reason: None given
+        expires: '2019-07-24T11:46:14.676Z'
+  'npm:ua-parser-js:20180227':
+    - browser-sync > ua-parser-js:
+        reason: None given
+        expires: '2019-07-24T11:46:14.676Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - browser-sync > easy-extender > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - gulp-sass > node-sass > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - gulp-sass > node-sass > sass-graph > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - gulp-sass > node-sass > gaze > globule > lodash:
+        patched: '2019-07-08T10:22:03.132Z'
+    - snyk > lodash:
+        patched: '2019-07-08T10:22:03.132Z'

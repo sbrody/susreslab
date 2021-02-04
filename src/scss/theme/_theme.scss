@@ -1,0 +1,29 @@
+.grey-bg {
+    background-color: $lightgrey;
+}
+
+.white-bg {
+    background-color: #fff;
+    padding: 0;
+    margin: 32px 16px;
+    flex-basis: 30%;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.page-template-featured {
+    background-color: $lightgrey;
+    // &.page-id-9 {
+    //     background-color: #fff;
+    // }
+}
+
+body {
+    background-color: $lightgrey;
+}
+
+// .entry-content {
+//     background-color: #fff;
+// }

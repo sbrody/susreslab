@@ -1,0 +1,40 @@
+<?php 
+// The pre query
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => '3'
+);
+$the_query = new WP_Query( $args );
+
+// The Loop
+if ( $the_query->have_posts() ) {
+    echo '<div class="top-posts-container"><div class="posts-top-loop">';
+    while ( $the_query->have_posts() ) {
+        
+        $the_query->the_post();
+        if( $the_query->current_post == 2 ): ?>
+            </div><div class="posts-top-loop"><div class="loop-item loop-form"><?php get_template_part('/components/loop', 'form'); ?></div>
+        <?php    
+        endif;
+        $tags = get_the_tags();
+        if ((!empty ($tags)) && ($tags[0]->name == 'Photo')):
+            echo '<div class="loop-item photo">';
+        else: 
+        echo '<div class="loop-item">';
+        endif; 
+            the_post_thumbnail();
+            echo '<a href="' . get_permalink() . '">' . '<h2>' . get_the_title() . '</h2>' . '</a>';
+            //$category = get_the_category();
+            if ( !empty($category) ): 
+            echo '<div class="post-cat">' . esc_html($category[0]->name) . '</div>';
+            endif; ?>
+        <div class="overlay"><a href="<?php echo get_permalink(); ?>">Read</a></div>
+        <?php echo '</div>';
+    }
+    echo '</div></div>';
+} else {
+    // no posts found
+}
+/* Restore original Post Data */
+wp_reset_postdata();

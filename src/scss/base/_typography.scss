@@ -1,0 +1,50 @@
+html {
+    body {
+        @include body-mobile;
+        @media screen and (min-width: 767px) {
+            @include body;
+        }
+        
+        color: $charcoal;
+        h1, h2, h3, h4, h5 {
+            margin: 0, 0, 16px;
+        }
+        h1 {
+            @include heading1;
+            @media screen and (max-width: 767px) {
+                @include heading3;
+            }
+        }
+        h2 {
+            @include heading2;
+            text-align: center;
+            @media screen and (max-width: 767px) {
+                @include heading4;
+            }
+            &.page-subhead {
+                @include heading1;
+            }
+        }
+        h3 {
+            @include heading3;
+            @media screen and (max-width: 767px) {
+                @include heading4;
+            }
+        }
+        h4 {
+            @include intro-text;
+            @media screen and (max-width: 767px) {
+                @include intro-text-mob;
+            }
+        }
+        a {
+            color: $orange;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                color: $orange;
+            }
+        }
+    }
+    
+}

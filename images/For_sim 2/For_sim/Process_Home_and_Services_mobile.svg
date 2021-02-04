@@ -1,0 +1,20 @@
+<svg width="295" height="176" viewBox="0 0 295 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M199.399 133.124C179.746 120.835 161.063 101.999 147.09 88.1654C147.09 88.1654 121.56 62.4566 95.1962 45.4727" stroke="#546169" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-dasharray="4 10"/>
+<path d="M22.5544 43.6675C9.38223 54.1606 0.999956 70.3651 0.999955 88.4292C0.999954 107.701 10.464 124.721 25.016 135.121M271.894 132.925C285.066 122.432 293.448 106.228 293.448 88.1635C293.448 71.5959 286.417 56.6925 275.193 46.2288M199.708 43.2559C179.924 55.5713 161.183 74.5266 147.091 88.4292C147.091 88.4292 121.667 114.106 95.3153 131.107" stroke="#546169" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-dasharray="4 10"/>
+<circle cx="57.8857" cy="30.9189" r="30.9189" fill="#EEF1F3"/>
+<text fill="#2BCBC2" xml:space="preserve" style="white-space: pre" font-family="Playfair Display" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="36.7734" y="36.3125">Step 1</tspan></text>
+<circle cx="57.8857" cy="145.081" r="30.9189" fill="#EEF1F3"/>
+<text fill="#2BCBC2" xml:space="preserve" style="white-space: pre" font-family="Playfair Display" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="34.7109" y="150.148">Step 2</tspan></text>
+<circle cx="237.157" cy="144.919" r="30.9189" fill="#EEF1F3"/>
+<text fill="#2BCBC2" xml:space="preserve" style="white-space: pre" font-family="Playfair Display" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="213.797" y="150.148">Step 4</tspan></text>
+<circle cx="237.157" cy="30.9189" r="30.9189" fill="#EEF1F3"/>
+<path d="M21.1484 44.9769L22.5486 39.7513L26.3741 43.5767L21.1484 44.9769Z" fill="#546169"/>
+<path d="M26.9857 136.5L21.6225 135.79L24.9187 131.501L26.9857 136.5Z" fill="#546169"/>
+<path d="M93.7071 131.798L90.7987 136.36L88.3024 131.56L93.7071 131.798Z" fill="#546169"/>
+<path d="M205.789 39.9332L202.88 44.4949L200.384 39.6952L205.789 39.9332Z" fill="#546169"/>
+<path d="M272.867 44.2962L267.495 43.6563L270.735 39.324L272.867 44.2962Z" fill="#546169"/>
+<path d="M274.448 134.293L269.038 134.247L271.783 129.585L274.448 134.293Z" fill="#546169"/>
+<path d="M206.257 133.585L204.187 138.584L200.893 134.292L206.257 133.585Z" fill="#546169"/>
+<path d="M95.1941 42.3375L92.2043 46.8463L89.7944 42.0026L95.1941 42.3375Z" fill="#546169"/>
+<text fill="#2BCBC2" xml:space="preserve" style="white-space: pre" font-family="Playfair Display" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="214.492" y="36.3125">Step 3</tspan></text>
+</svg>
