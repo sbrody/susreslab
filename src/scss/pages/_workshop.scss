@@ -1,6 +1,6 @@
 // Workshop form
 
-.page-template-workshop {
+.page-template-workshop, .workshops {
     .pum-overlay {
         background-color: rgba(84, 97, 105, 0.6);
         .pum-container {
@@ -402,6 +402,89 @@
             p {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+// Workshop archive page 
+
+.page-template-workshop-archive {
+    .entry-content {
+        background: linear-gradient($lightgrey, $lightgrey 175px, #fff 175px, #fff);
+    }
+    .workshop-archive-container {
+        padding-top: 0;
+    }
+    .workshop-cta {
+        top: 0;
+        margin-bottom: 48px;
+        width: 100%;
+        max-width: 920px;
+        padding: 0;
+        border: 2px solid $lightgrey;
+        border-radius: 2px;
+        .flex-column-1 {
+            width: 38%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .flex-column-2 {
+            width: 100%;
+            @media screen and (min-width: 685px) {
+                width: 62%;
+            }
+            
+            padding: 32px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            hr {
+                margin-top: auto;
+                margin-bottom: 16px;
+            }
+            .workshop-cta-footer {
+                margin: 24px 0 0px;
+                font-size: 14px;
+                line-height: 1.2;
+                @media screen and (max-width: 685px) {
+                    flex-wrap: wrap;
+                } 
+                span {
+                    display: block;
+                    width: auto;
+                    margin: 8px 8px 8px 0;
+                    @media screen and (min-width: 685px) {
+                        display: inline;
+                        width: auto;
+                        margin: 0;
+                        &.workshop-date {
+                            margin-left: auto;
+                        }
+                    }
+                }
+                .logo {
+                    margin-right: 32px;
+                }
+                .button {
+                    padding: 8px 20px;
+                }
+            }
+        }
+    }
+    .workshop-archive-header {
+        padding-bottom: 0;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .old-workshop-archive-container {
+        padding-top: 64px;
+        .wp-post-image {
+            filter: opacity(0.5);
         }
     }
 }

@@ -23,7 +23,7 @@
 
 // single post && workshop template
 
-.single-post, .page-template-workshop {
+.single-post, .page-template-workshop, .workshops, .page-template-workshop-archive {
     .entry-header {
         text-align: center;
         height: 60vh;
@@ -67,7 +67,7 @@
     }
 }
 
-.page-template-workshop {
+.page-template-workshop, .workshops {
     .entry-header {
         padding: 0;
         height: 480px;
@@ -92,3 +92,27 @@
 }
 
 
+.page-template-workshop-archive {
+    .entry-header {
+        .wp-post-image {
+            max-width: 150px;
+            height: auto;
+        }
+    }
+    
+    .srl-post-title {
+        .entry-title {
+            margin: 16px auto 24px;
+            max-width: 940px;
+            @include heading1;
+            .orange {
+                display: inline;
+            }
+        }
+        h2 {
+            @include body;
+            max-width: 960px;
+            margin: 0 auto 48px;
+        }
+    }
+}

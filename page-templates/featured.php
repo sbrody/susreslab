@@ -6,6 +6,7 @@
  * A template for featured pages
  *
  * Template Name: Featured
+ * 
  *
  * @package Genesis Sample
  * @author  StudioPress
@@ -48,6 +49,7 @@ function srl_after_content()
     get_template_part('/lib/gutenberg/blocks/resource', 'list');
 }
 
+wp_reset_query();
 
 
 // Runs the Genesis loop.
