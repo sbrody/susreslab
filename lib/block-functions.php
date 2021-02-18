@@ -234,6 +234,15 @@ function register_acf_block_types()
             'icon'              => 'megaphone',
             'keywords'          => array('form', 'book', 'srl'),
         ));
+        acf_register_block_type(array(
+            'name'              => 'workshop-interest-form',
+            'title'             => __('Workshop interest form'),
+            'description'       => __('Form to register interest in workshops'),
+            'render_template'   => '/lib/gutenberg/blocks/workshop-interest.php',
+            'category'          => 'srl-blocks',
+            'icon'              => 'businesswoman',
+            'keywords'          => array('form', 'register', 'srl'),
+        ));
     }
 }
 

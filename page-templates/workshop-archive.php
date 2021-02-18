@@ -76,6 +76,7 @@ function workshops_custom_query()
         )
     );
 
+    $message = get_field('message');
     global $workshop_loop;
     $workshop_loop = new WP_Query($args);
 
@@ -84,6 +85,8 @@ function workshops_custom_query()
         while ($workshop_loop->have_posts()) : $workshop_loop->the_post();
             // vars
             $workshop_start = get_field('meta_workshop_date');
+            $date_time_object = DateTime::createFromFormat('Y-m-d H:i:s', $workshop_start);
+            $new_date_string = $date_time_object->format('j F | g a');
             $workshop_end = get_field('meta_workshop_end');
             $workshop_tagline = get_field('meta_workshop_tagline');
             $workshop_collaborator = get_field('meta_workshop_collaborator');
@@ -102,7 +105,7 @@ function workshops_custom_query()
                         <hr />
                         <div class="workshop-cta-footer">
                             <span class="button"><a href="<?php the_permalink(); ?>">Find out more</a></span>
-                            <span class="workshop-date"><?php echo esc_html($workshop_start) . ' - ' . esc_html($workshop_end) . ' GMT'; ?></span>
+                            <span class="workshop-date"><?php echo $new_date_string . ' - ' . esc_html($workshop_end) . ' GMT'; ?></span>
                         </div>
                         <?php if ($workshop_collaborator) : ?>
                             <div class="workshop-cta-footer">
@@ -116,6 +119,8 @@ function workshops_custom_query()
             </div>
     <?php endwhile;
         echo '</div>';
+    else :
+        echo '<div class="feed-update container">' . $message . '</div>';
     endif;
     wp_reset_postdata();
 }
@@ -164,6 +169,9 @@ function old_workshops_custom_query()
         while ($workshop_loop_old->have_posts()) : $workshop_loop_old->the_post();
             // vars
             $workshop_start = get_field('meta_workshop_date');
+            // turn date string into formated string
+            $date_time_object = DateTime::createFromFormat('Y-m-d H:i:s', $workshop_start);
+            $new_date_string = $date_time_object->format('j F | g a');
             $workshop_end = get_field('meta_workshop_end');
             $workshop_tagline = get_field('meta_workshop_tagline');
             $workshop_collaborator = get_field('meta_workshop_collaborator');
@@ -182,7 +190,7 @@ function old_workshops_custom_query()
                         <hr />
                         <div class="workshop-cta-footer">
                             <span class="button"><a href="<?php the_permalink(); ?>">Find out more</a></span>
-                            <span class="workshop-date"><?php echo esc_html($workshop_start) . ' - ' . esc_html($workshop_end) . ' GMT'; ?></span>
+                            <span class="workshop-date"><?php echo $new_date_string . ' - ' . esc_html($workshop_end) . ' GMT'; ?></span>
                         </div>
                         <?php if ($workshop_collaborator) : ?>
                             <div class="workshop-cta-footer">

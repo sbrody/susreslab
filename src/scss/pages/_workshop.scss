@@ -1,6 +1,21 @@
 // Workshop form
 
-.page-template-workshop, .workshops {
+#interest-form {
+    input {
+        width: 100%;
+    }
+    .form-fields {
+        justify-content: space-between;
+    }
+    .form-field {
+        width: 100%;
+        @media screen and (min-width: 767px) {
+            width: 48%;
+        }
+    }
+}
+
+.page-template-workshop, .workshops, .workshops-template, .single-workshops {
     .pum-overlay {
         background-color: rgba(84, 97, 105, 0.6);
         .pum-container {
@@ -74,6 +89,19 @@
                     height: 15px;
                     background-size: contain;
                 }
+            }
+        }
+        .popup-form {
+            margin: 0;
+            .form-field {
+                margin-top: 16px;
+                br {
+                    display: none;
+                }
+            }
+            .button {
+                background-color: $orange !important;
+                border-radius: 28px !important;
             }
         }
         
@@ -485,6 +513,24 @@
         padding-top: 64px;
         .wp-post-image {
             filter: opacity(0.5);
+        }
+    }
+
+    .feed-update {
+        max-width: 960px;
+        margin: 0 auto 64px;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    #svg-outer {
+        bottom: -15px;
+        width: 100vw;
+        @media screen and (min-width: 1655px) {
+            left: -5%;
+        }
+        #form-svg {
+            bottom: -95px;
         }
     }
 }
