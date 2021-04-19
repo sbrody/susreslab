@@ -76,10 +76,23 @@
             display: block;
         }
         @media screen and (min-width: 1024px) {
-            margin: 48px 0; 
+            margin: 16px 0; 
         }
         
+        .visible-on-hover {
+            opacity: 0;
+            filter: contrast(0);
+            transition: opacity 0.3s ease-in-out, filter 0.4s ease;
+            //
+            &:hover {
+                opacity: 1;
+                filter: contrast(100%);
+                transition: opacity 0.3s ease-in-out, filter 0.4s ease;
 
+                
+                
+            }
+        }
 
         .circle-group {
             &:hover {

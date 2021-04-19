@@ -53,32 +53,32 @@
             >div, form {
                 margin: 24px 0;
             }
-            form {
-                .form-fields {
-                    margin-bottom: 24px;
-                    display:flex;
-                    flex-direction: column; 
-                    @media screen and (min-width: 767px) {
-                        flex-direction: row;
-                    }
-                    input {
-                        width: calc(100% - 32px);
-                        margin-bottom: 16px;
-                        @media screen and (min-width: 767px) {
-                            width: 50%;
-                        }
-                        &:first-of-type {
-                            margin-right: 16px;
-                        }
-                        &:focus {
-                            border-color: $turquoise;
-                        }
-                        &::placeholder {
-                            color: $grey;
-                        }
-                        
-                    }
+            
+            .form-fields {
+                margin-bottom: 24px;
+                display:flex;
+                flex-direction: column; 
+                @media screen and (min-width: 767px) {
+                    flex-direction: row;
                 }
+                input {
+                    width: calc(100% - 32px);
+                    margin-bottom: 16px;
+                    @media screen and (min-width: 767px) {
+                        width: 50%;
+                    }
+                    &:first-of-type {
+                        margin-right: 16px;
+                    }
+                    &:focus {
+                        border-color: $turquoise;
+                    }
+                    &::placeholder {
+                        color: $grey;
+                    }
+                    
+                }
+                
             .button {
                 &.large {
                     width: calc(100% - 32px);
@@ -179,7 +179,75 @@
         }
     }
 
-    // workshop form
+    // register interest form
+
+    #popmake-1727 {
+        h2 {
+           margin-top: 16px; 
+        }
+        button.wpforms-submit {
+           min-width: 240px;
+        }
+        .pum-close {
+            color: transparent;
+            text-shadow: none;
+        }
+
+        .wpforms-container {
+            max-width: 640px;
+            margin-left: 0;
+        }
+    }
+
+    #interest-form {
+        .form-fields {
+            display: block;
+            .wpforms-field-container {
+                display: flex;
+                flex-wrap: wrap;
+                .wpforms-field {
+                    width: 49%;
+                    margin: 5px 0;
+                    @media screen and (max-width: 550px) {
+                        width: 100%;
+                    }
+                    &:first-of-type {
+                        margin-right: 2%;
+                        width: 49%;
+                        @media screen and (max-width: 550px) {
+                            width: 100%;
+                            margin-right: 0;
+                        }
+                    }
+                    &#wpforms-1726-field_6-container {
+                        width: 100%;
+                    }
+                    &.wpforms-field-checkbox  {
+                        width: 100%;
+                    }
+                    
+                    input[type='checkbox'] {
+                        width: auto;
+                    }
+                    input {
+                        &:focus {
+                            border-color: $turquoise;
+                        }
+                    }
+                }
+            }
+            button {
+                background-color: $orange;
+                width: 100%;
+                height: 56px;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 28px;
+                box-shadow: 2px 4px 8px rgba(0,0,0,.3);
+                color: #fff;
+            }
+        }
+    }
 
     
     

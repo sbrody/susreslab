@@ -52,7 +52,7 @@ function srl_after_content()
 }
 
 
-// Set up query to show 'workshops' post type
+// ****************** Set up query to show 'workshops' post type
 function workshops_custom_query()
 {
     global $post;
@@ -125,7 +125,7 @@ function workshops_custom_query()
     wp_reset_postdata();
 }
 
-// Set up query to show historic 'workshops' 
+// ***************** Set up query to show historic 'workshops' 
 function old_workshops_custom_query()
 {
     global $post;
@@ -190,7 +190,7 @@ function old_workshops_custom_query()
                         <hr />
                         <div class="workshop-cta-footer">
                             <span class="button"><a href="<?php the_permalink(); ?>">Find out more</a></span>
-                            <span class="workshop-date"><?php echo $new_date_string . ' - ' . esc_html($workshop_end) . ' GMT'; ?></span>
+                            <span class="workshop-date">Coming soon</span>
                         </div>
                         <?php if ($workshop_collaborator) : ?>
                             <div class="workshop-cta-footer">

@@ -11,6 +11,22 @@
 
 .entry-content {
     padding: 0 5%;
+    h2.with-padding {
+        padding: 64px 16px 32px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    p.with-padding {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 16px
+    }
+    ol.grey-background {
+        li {
+            border-bottom: 1px solid #dedede;
+        }
+    }
+
 }
     // sell more boxes
     .container-sub {
@@ -310,6 +326,9 @@
             list-style:none;
             counter-reset: li;
             position: relative;
+            @media screen and (max-width:800px) {
+                padding: 16px;
+            }
             li {
                
                 padding: 24px 0 24px 64px;
@@ -815,13 +834,13 @@
 .container {
     &.mobile {
         display: flex;
-        padding-top: 0;
+        padding: 0 16px 16px;
         @media screen and (min-width: 768px) {
             display: none;
         }
         ol {
             @media screen and (max-width: 550px) {
-                padding: 0;
+                padding: 0 16px;
             }
             li {
                 @media screen and (max-width: 550px) {

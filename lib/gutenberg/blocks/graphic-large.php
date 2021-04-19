@@ -2,30 +2,32 @@
 // vars 
 $header = get_field('header');
 $intro = get_field('intro');
-if ($header): ?>
+if ($header) : ?>
     <div class="container graphic-large">
         <h2><?php echo $header; ?></h2>
-        <div class="container-sub"><p><?php echo $intro; ?></p></div>
-        <?php echo file_get_contents( get_stylesheet_directory_uri() . '/images/process-front2.svg' ); ?>
+        <div class="container-sub">
+            <p><?php echo $intro; ?></p>
+        </div>
+        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/images/new_graphic2.svg'); ?>
     </div>
     <div class="container mobile">
         <img src="/wp-content/themes/genesis-sample/images/graphic-mob.png" alt="SRL process diagram">
         <ol>
             <li>
-                <h3>Customer insight</h3>
-                <p>Customer insight – use research and data to understand customers’ needs</p>
+                <h3>Spark interest</h3>
+                <p>Create an emotional connection with customers </p>
             </li>
             <li>
-                <h3>Asset creation</h3>
-                <p>Constantly improve with insights and data. Use this to enhance your products and services </p>
+                <h3>Show value</h3>
+                <p>Overcome inherent brain barriers to show why low carbon solutions are worth it</p>
             </li>
             <li>
-                <h3>Measure and learn</h3>
-                <p>Measure and learn – constantly improve with insights and data. Use this to enhance your products and services</p>
+                <h3>Make it easy</h3>
+                <p>Use behavioural insights to make it easier for customers to say yes </p>
             </li>
             <li>
-                <h3>Growth and scale</h3>
-                <p>Accelerate growth through building re-usable and scalable assets that are cost effective and free up your time</p>
+                <h3>Grow sustainably</h3>
+                <p>Build scalable brand assets that build a low carbon economy</p>
             </li>
         </ol>
     </div>

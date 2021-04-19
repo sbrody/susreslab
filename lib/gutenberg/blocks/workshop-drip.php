@@ -5,7 +5,9 @@ $image = get_field('image') ?: 1460;
 $header = get_field('header') ?: 'How to use neuroscience to make your marketing more successful and sustainable';
 $button_text = get_field('button_text') ?: 'Apply now';
 $popup_form_id = get_field('popup_form_id') ?: 'popmake-1442';
-$event_date = get_field('date') ?: '19 January  |  9am-12pm GMT';
+$event_date = get_field('date');
+$finished_form_header = get_field('finished_form_header') ?: "Find out more about future workshops";
+$finished_form_content = get_field('finished_form_content') ?: "Register your interest now and we will let you know when we announce our next workshop";
 
 // page vars
 
@@ -61,19 +63,21 @@ $shortcode_data = "
             <?php
             // create custom popup if workshop date has passed  
             if ($date_now > $workshop_date) : ?>
-                <button class="button popmake-post-<?php echo $post_id; ?>">Register your interest</button>
-                <?php echo do_shortcode("[popup id='post-" . $post_id . "']" .
-                    $shortcode_data .
-                    "[/popup]"); ?>
+                <button class="button popmake-1727">Register your interest</button>
+
                 <?php else :
                 if ($button_text) : ?>
                     <button class="button <?php echo esc_html($popup_form_id); ?>"><?php echo esc_html($button_text); ?></button>
             <?php endif;
             endif;
             ?>
-            <?php if ($event_date) : ?>
-                <span class="workshop-date"><?php echo esc_html($event_date); ?></span>
-            <?php endif; ?>
+            <?php if ($event_date) :
+                if ($date_now > $workshop_date) : ?>
+                    <span class="workshop-date">Coming soon</span>
+                <?php else : ?>
+                    <span class="workshop-date"><?php echo esc_html($event_date); ?></span>
+            <?php endif;
+            endif; ?>
         </div>
     </div>
 </div>

@@ -40,6 +40,9 @@
                 @include xl-heading;
             }
         }
+        @media all and (max-width: 550px) {
+            height: auto;
+        }
     }
     .tag-photo {
         .entry-header {
