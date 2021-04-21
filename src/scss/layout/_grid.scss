@@ -96,5 +96,14 @@
     article {
         max-width: 1110px;
         margin: 0 auto 40px;
+        .form-container {
+            margin: 64px 0;
+        }
+        ol {
+            li {
+                padding: 48px 0 24px 64px;
+            }
+            
+        }
     }
 }
