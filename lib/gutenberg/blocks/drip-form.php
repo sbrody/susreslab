@@ -32,7 +32,7 @@ $drip_id = get_field('drip_id', 'option');
                         <label for="website">Website</label><br />
                         <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="" />
                     </div>
-
+                    <input type="hidden" name="tags[]" id="tags_" value="Neuroscience" tabindex="-1">
                     <div>
                         <input id="button" class="button large g-recaptcha" type="submit" value="Sign Up" data-drip-attribute="sign-up-button" data-sitekey="6LdNwPwUAAAAAO-vpaPRgT8gOh2gen3Dyd-1eSNT" data-callback='onSubmit'>
                     </div>
