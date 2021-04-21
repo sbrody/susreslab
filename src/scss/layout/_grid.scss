@@ -83,5 +83,18 @@
     .entry-header {
     max-height: none;
     }
+}
 
+.page-template-campaign {
+    .entry-header {
+        height: auto;
+        text-align: center;
+        .entry-title {
+            max-width: none;
+        }
+    }
+    article {
+        max-width: 1110px;
+        margin: 0 auto 40px;
+    }
 }
