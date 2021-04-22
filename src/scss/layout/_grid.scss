@@ -89,6 +89,7 @@
     .entry-header {
         height: auto;
         text-align: center;
+        min-height: 240px;
         .entry-title {
             max-width: none;
         }
@@ -96,6 +97,10 @@
     article {
         max-width: 1110px;
         margin: 0 auto 40px;
+        figcaption {
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
         .form-container {
             margin: 64px 0;
         }
