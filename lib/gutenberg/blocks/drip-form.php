@@ -23,7 +23,7 @@ $drip_id = get_field('drip_id', 'option');
                     <div class="form-intro"><?php echo $intro; ?></div>
                 <?php endif; ?>
 
-                <form class="home-form" action="https://www.getdrip.com/forms/48280799/submissions" method="post" data-drip-embedded-form="48280799" id="drip-form">
+                <form class="home-form" action="https://www.getdrip.com/forms/<?php echo esc_html($drip_id); ?>/submissions" method="post" data-drip-embedded-form="<?php echo esc_html($drip_id); ?>" id="drip-form">
                     <div class="form-fields">
                         <input id="drip-email" name="fields[email]" type="email" placeholder="Email address" value="" />
                         <input id="drip-name" name="fields[Name]" type="text" placeholder="First name" value="" />
@@ -34,7 +34,7 @@ $drip_id = get_field('drip_id', 'option');
                     </div>
                     <input type="hidden" name="tags[]" id="tags_" value="Neuroscience" tabindex="-1">
                     <div>
-                        <input id="button" class="button large g-recaptcha" type="submit" value="Sign Up" data-drip-attribute="sign-up-button" data-sitekey="6LdNwPwUAAAAAO-vpaPRgT8gOh2gen3Dyd-1eSNT" data-callback='onSubmit'>
+                        <input id="button" class="button large" type="submit" value="Sign Up" data-drip-attribute="sign-up-button" data-sitekey="6LdNwPwUAAAAAO-vpaPRgT8gOh2gen3Dyd-1eSNT" data-callback='onSubmit'>
                     </div>
                 </form>
 

@@ -291,20 +291,6 @@ function srl_gsearch()
 
 add_action('wp_head', 'srl_gsearch',  11);
 
-// Google reCaptcha
-
-function srl_recaptcha()
-{ ?>
-	<!-- Google reCaptcha -->
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	<script>
-		function onSubmit(token) {
-			document.getElementById("drip-form").submit();
-			//  document.getElementById("drip-form2").submit();
-		}
-	</script>
-<?php
-}
 
 add_action('wp_head', 'srl_recaptcha',  20);
 
