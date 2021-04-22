@@ -32,7 +32,7 @@ $disclaimer = get_field('contact-disclaimer');
                                                 endif; ?></div>
 
                 <div class="form-fields">
-                    <input id="button" class="button medium" type="submit" value="Send" data-drip-attribute="sign-up-button" data-sitekey="6LdNwPwUAAAAAO-vpaPRgT8gOh2gen3Dyd-1eSNT" data-callback='onSubmit'>
+                    <input id="button" class="button medium" type="submit" value="Send" data-drip-attribute="sign-up-button" data-callback='onSubmit'>
                 </div>
             </form>
         </div>
