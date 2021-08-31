@@ -260,39 +260,6 @@ function srl_add_scripts()
 
 add_action('wp_enqueue_scripts', 'srl_add_scripts');
 
-// Google analytics
-
-function srl_analytics()
-{ ?>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146594886-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'UA-146594886-1');
-	</script>
-<?php
-}
-
-add_action('wp_head', 'srl_analytics', 10);
-
-
-// Google search
-function srl_gsearch()
-{ ?>
-	<!-- Google search console -->
-	<meta name="google-site-verification" content="4X4PzwRowL_G8gVx0sWQbkBq4BVGl7vllMc0G5JCmc4" />
-<?php
-}
-
-add_action('wp_head', 'srl_gsearch',  11);
-
-
-add_action('wp_head', 'srl_recaptcha',  20);
 
 // move footer widgets into footer
 remove_action('genesis_before_footer', 'genesis_footer_widget_areas');
